@@ -7,27 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GigaCalc - Unilorin GPA Calculator</title>
     <meta name="title" content="GigaCalc">
-  <meta name="description" content="A Unilorin GPA calculator made by Dynasty">
+    <meta name="description" content="A Unilorin GPA calculator made by Dynasty">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="./js/jquery-3.6.0.js"></script>
-    <script src="./js/eleven.js"></script>
+    <script src="./js/nine.js"></script>
 </head>
 
 <body>
 
-    
 
 
-    <div class="container"> <br> <br> 
-        <h3>FOR UNILORIN STUDENTS</h3> 
+    <div class="container"> <br> <br>
+        <h3>FOR UNILORIN STUDENTS</h3>
         <p>Calculate your total gpa After 1st semester</p> <br>
         <marquee scrollamount="-5" width="100%" loop="10000">
 
-            <h6><b>PLEASE NOTE: </b> This is for Students who had 11 courses in 1st semester, if you offered more
+            <h6><b>PLEASE NOTE: </b> This is for Students who had 9 courses in 1st semester, if you offered more
                 courses; Kindly go back to the 1st page
             </h6>
-        
         </marquee>
         <br>
         <a href="./index.html" class="btn btn-warning">Click here to go back to Main Menu</a>
@@ -42,9 +40,9 @@
 
 
         <br> <br>
-</h6>
+        </h6>
 
-        <h6>A = 5, B = 4, C = 3, D = 4, E = 5, F = 0</h6>
+        <h6>A = 5, B = 4, C = 3, D = 4, E = 1, F = 0</h6>
         <br>
         <h6>A - 70-100</h6>
         <br>
@@ -62,28 +60,29 @@
         <div class="course-info">
             <br>
 
+
           
-            <h6><b>PLEASE NOTE: </b> This page is only for those who offered 11 courses in 1st semester, If you offered
+            <h6><b>PLEASE NOTE: </b> This page is only for those who offered 9 courses in 1st semester, If you offered
                 More, Kindly go back to the 1st page
             </h6>
 
-            
-            <br> <br>
 
-            <select name="courses" id="myCourses" required>
-                <option value="11">11</option>
+                <br> <br>
 
-            </select>
-            <button type="submit" class="btn btn-warning amountCourses">Start Checking</button>
+                <select name="courses" id="myCourses" required>
+                    <option value="9">9</option>
+
+                </select>
+                <button type="submit" class="btn btn-warning amountCourses">Start Checking</button>
 
         </div>
 
 
         <br>
 
-        <div class="course-11">
+        <div class="course-9">
             <br>
-            <p>Input the Units and grades for your 11 Courses</p> <br> <br> <br>
+            <p>Input the Units and grades for your 9 Courses</p> <br> <br> <br>
             <p>Ensure you fill in your grades into our system one-by-one</p>
             <br>
 
@@ -116,7 +115,7 @@
 
             </div>
 
-            <br> 
+            <br>
 
             <div class="myCourse2" id="second">
                 <h5>Course-2</h5>
@@ -362,113 +361,54 @@
 
 
 
-
-
-            <div class="myCourse10" id="ten">
-                <h5>Course-10</h5>
-                <select name="myUnits" class="unit10" required>
-                    <option value="1">1 unit</option>
-                    <option value="2">2 unit</option>
-                    <option value="3">3 unit</option>
-                </select> &nbsp; &nbsp; &nbsp; &nbsp;
-
-                <select name="myGrades" class="grade10" required>
-                    <option value="A">Grade A</option>
-                    <option value="B">Grade B</option>
-                    <option value="C">Grade C</option>
-                    <option value="D">Grade D</option>
-                    <option value="E">Grade E</option>
-                    <option value="F">Grade F</option>
-                </select>
+            <div class="final9">
+                <!-- SHOWING MY USERS THE FINAL RESULT -->
+                <p>Click here for your total gpa at the end of 1st semester. </p> <br>
+                <p>Before clicking the button below, ensure you have clicked all of the above buttons to check your
+                    gpa per course </p> <br>
+                <button class="btn btn-warning" id="finalResult">check my total gpa for 1st semester</button>
 
                 <br> <br>
 
-                <button class="btn btn-warning check10">check gpa for course-10</button> <br> <br>
+                <p class="myFinalResult"></p> <br>
 
-                <p class="myTenthResult"></p>
-                <p class="myTenthResult2"></p>
+                <p class="Thanks"></p> <br>
 
-
-                <br>
-
-
-
+                <p class="stayTuned"></p> <br>
 
             </div>
-
-
-
-
-            <div class="myCourse11" id="eleven">
-                <h5>Course-11</h5>
-                <select name="myUnits" class="unit11" required>
-                    <option value="1">1 unit</option>
-                    <option value="2">2 unit</option>
-                    <option value="3">3 unit</option>
-                </select> &nbsp; &nbsp; &nbsp; &nbsp;
-
-                <select name="myGrades" class="grade11" required>
-                    <option value="A">Grade A</option>
-                    <option value="B">Grade B</option>
-                    <option value="C">Grade C</option>
-                    <option value="D">Grade D</option>
-                    <option value="E">Grade E</option>
-                    <option value="F">Grade F</option>
-                </select>
-
-                <br> <br>
-
-                <button class="btn btn-warning check11">check gpa for course-11</button> <br> <br>
-
-                <p class="myEleventhResult"></p>
-                <p class="myEleventhResult2"></p>
-
-
-                <br> <br>
-
-                <div class="final11">
-                    <!-- SHOWING MY USERS THE FINAL RESULT -->
-                    <p>Click here for your total gpa at the end of 1st semester. </p> <br>
-                    <p>Before clicking the button below, ensure you have clicked all of the above buttons to check your
-                        gpa per course </p> <br>
-                    <button class="btn btn-warning" id="finalResult">check my total gpa for 1st semester</button>
-
-                    <br> <br>
-
-                    <p class="myFinalResult"></p>  <br>
-
-                    <p class="Thanks"></p> <br>
-
-                    <p class="stayTuned"></p> <br>
-
-                </div>
-
-            </div>
-
-
-
-
-
 
         </div>
-    <br>
-    <br>
 
-    <a href="https://www.producthunt.com/posts/gigacalc?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-gigacalc" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=401862&theme=neutral" alt="GigaCalc - A&#0032;GPA&#0032;calculator&#0032;for&#0032;College&#0032;Students&#0032;in&#0032;Unilorin | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-    
 
+
+
+
+
+        <br>
+        <br>
+        
+        <a href="https://www.producthunt.com/posts/gigacalc?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-gigacalc"
+            target="_blank"><img
+                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=401862&theme=neutral"
+                alt="GigaCalc - A&#0032;GPA&#0032;calculator&#0032;for&#0032;College&#0032;Students&#0032;in&#0032;Unilorin | Product Hunt"
+                style="width: 250px; height: 54px;" width="250" height="54" /></a>
+        
+        
         <br> <br>
         
         <marquee scrollamount="-5" width="100%" loop="10000">
-            
+        
             <p>Powered by <b>Dynasty | 09012857304 | For enquiries, you can call or send a message on whatsapp</b></p>
-            
+        
         </marquee>
-            <a href="tel:+2349012857304">Call Me </a> | <a href="sms:+2349012857304">Send a Message </a> 
+        <a href="tel:+2349012857304">Call Me </a> | <a href="sms:+2349012857304">Send a Message </a>
+        </div>
+        
+        <br> <br>
+
     </div>
-
-    <br> <br>
-
+    
 </body>
 
 </html>
