@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GigaCalc - Unilorin GPA Calculator</title>
+    <meta name="title" content="GigaCalc">
+    <meta name="description" content="A Unilorin GPA calculator made by Dynasty">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/ten.js"></script>
+</head>
+
+<body>
+
+   
+
+    <div class="container"> <br> <br>
+        <h3>FOR UNILORIN STUDENTS</h3>
+        <p>Calculate your total gpa After 1st semester</p> <br>
+        <marquee scrollamount="-5" width="100%" loop="10000">
+
+            
+            <h6><b>PLEASE NOTE: </b> This is for Students who had 10 courses in 1st semester, if you offered more
+                courses; Kindly go back to the 1st page
+            </h6>
+
+        </marquee>
+
+        <h4>IMPORTANT KEY POINTS</h4> <br>
+
+        <h5>GPA means Grade Point Average and it can be gotten at the end of each semester</h5> <br>
+        <h5>CGPA means Cummulative Grade Point Average; And this is the mean of GPA in 2 Semesters</h5> <br>
+        <h5>You can calculate your total gpa for first semester with this calculator</h5> <br>
+        <!-- <h5>TGP: Total grade point, it can be gotten from any of the two semesters</h5> -->
+
+
+        <br> <br>
+        </h6>
+
+        <h6>A = 5, B = 4, C = 3, D = 4, E = 1, F = 0</h6>
+        <br>
+        <h6>A - 70-100</h6>
+        <br>
+        <h6>B - 60-69</h6>
+        <br>
+        <h6>C - 50-59</h6>
+        <br>
+        <h6>D - 45-49</h6>
+        <br>
+        <h6>E - 40-44</h6>
+        <br>
+        <h6>F - 0-39</h6>
+        <br>
+
+        <div class="course-info">
+            <br>
+
+
+            <h6><b>PLEASE NOTE: </b> This page is only for those who offered 10 courses in 1st semester, If you offered
+                More, Kindly go back to the 1st page
+            </h6>
+
+
+                <br> <br>
+
+                <select name="courses" id="myCourses" required>
+                    <option value="10">10</option>
+
+                </select>
+                <button type="submit" class="btn btn-warning amountCourses">Start Checking</button>
+
+        </div>
+
+
+        <br>
+
+        <div class="course-10">
+            <br>
+            <p>Input the Units and grades for your 10 Courses</p> <br> <br> <br>
+            <p>Ensure you fill in your grades into our system one-by-one</p>
+            <br>
+
+            <div class="myCourse1" id="first">
+                <h5>Course-1</h5>
+                <select name="myUnits" class="unit1" required>
+                    <option value="1">1 unit</option>
+                    <option value="2">2 unit</option>
+                    <option value="3">3 unit</option>
+                </select> &nbsp; &nbsp; &nbsp; &nbsp;
+
+                <select name="myGrades" class="grade1" required>
+                    <option value="A">Grade A</option>
+                    <option value="B">Grade B</option>
+                    <option value="C">Grade C</option>
+                    <option value="D">Grade D</option>
+                    <option value="E">Grade E</option>
+                    <option value="F">Grade F</option>
+                </select>
+                <br> <br>
+
+                <!-- <button class="btn btn-warning continue1">check gpa for course </button> -->
+                <button class="btn btn-warning check1">check gpa for course-1</button> <br> <br>
+
+                <!-- <button class="btn btn-warning " id="Next-1">Next Course > </button> -->
+
+
+                <p class="myResult"></p>
+                <p class="myResult2"></p>
+
+            </div>
+
+            <br>
+
+            <div class="myCourse2" id="second">
+                <h5>Course-2</h5>
+                <select name="myUnits" class="unit2" required>
+                    <option value="1">1 unit</option>
+                    <option value="2">2 unit</option>
+                    <option value="3">3 unit</option>
+                </select> &nbsp; &nbsp; &nbsp; &nbsp;
+
+                <select name="myGrades" class="grade2" required>
+                    <option value="A">Grade A</option>
+                    <option value="B">Grade B</option>
+                    <option value="C">Grade C</option>
+                    <option value="D">Grade D</option>
+                    <option value="E">Grade E</option>
+                    <option value="F">Grade F</option>
+                </select>
+
+                <br> <br>
+
+                <button class="btn btn-warning check2">check gpa for course-2</button> <br> <br>
+
+                <p class="mySecondResult"></p>
+                <p class="mySecondResult2"></p>
+
+
+                <br>
+
+            </div>
+
+
+            <div class="myCourse3" id="third">
+                <h5>Course-3</h5>
+                <select name="myUnits" class="unit3" required>
+                    <option value="1">1 unit</option>
+                    <option value="2">2 unit</option>
+                    <option value="3">3 unit</option>
+                </select> &nbsp; &nbsp; &nbsp; &nbsp;
+
+                <select name="myGrades" class="grade3" required>
+                    <option value="A">Grade A</option>
+                    <option value="B">Grade B</option>
+                    <option value="C">Grade C</option>
+                    <option value="D">Grade D</option>
+                    <option value="E">Grade E</option>
+                    <option value="F">Grade F</option>
+                </select>
+
+                <br> <br>
+
+                <button class="btn btn-warning check3">check gpa for course-3</button> <br> <br>
+
+                <p class="myThirdResult"></p>
+                <p class="myThirdResult2"></p>
+
+
+                <br>
+
+            </div>
+
+            <div class="myCourse4" id="four">
+                <h5>Course-4</h5>
+                <select name="myUnits" class="unit4" required>
+                    <option value="1">1 unit</option>
+                    <option value="2">2 unit</option>
+                    <option value="3">3 unit</option>
+                </select> &nbsp; &nbsp; &nbsp; &nbsp;
+
+                <select name="myGrades" class="grade4" required>
+                    <option value="A">Grade A</option>
+                    <option value="B">Grade B</option>
+                    <option value="C">Grade C</option>
+                    <option value="D">Grade D</option>
+                    <option value="E">Grade E</option>
+                    <option value="F">Grade F</option>
+                </select>
+
+                <br> <br>
+
+                <button class="btn btn-warning check4">check gpa for course-4</button> <br> <br>
+
+                <p class="myFourthResult"></p>
+                <p class="myFourthResult2"></p>
+
+
+                <br>
+
+            </div>
+
+            <div class="myCourse5" id="five">
+                <h5>Course-5</h5>
+                <select name="myUnits" class="unit5" required>
+                    <option value="1">1 unit</option>
+                    <option value="2">2 unit</option>
+                    <option value="3">3 unit</option>
+                </select> &nbsp; &nbsp; &nbsp; &nbsp;
+
+                <select name="myGrades" class="grade5" required>
+                    <option value="A">Grade A</option>
+                    <option value="B">Grade B</option>
+                    <option value="C">Grade C</option>
+                    <option value="D">Grade D</option>
+                    <option value="E">Grade E</option>
+                    <option value="F">Grade F</option>
+                </select>
+
+                <br> <br>
+
+                <button class="btn btn-warning check5">check gpa for course-5</button> <br> <br>
+
+                <p class="myFifthResult"></p>
+                <p class="myFifthResult2"></p>
+
+
+                <br>
+
+            </div>
+
+
+            <div class="myCourse6" id="six">
+                <h5>Course-6</h5>
+                <select name="myUnits" class="unit6" required>
+                    <option value="1">1 unit</option>
+                    <option value="2">2 unit</option>
+                    <option value="3">3 unit</option>
+                </select> &nbsp; &nbsp; &nbsp; &nbsp;
+
+                <select name="myGrades" class="grade6" required>
+                    <option value="A">Grade A</option>
+                    <option value="B">Grade B</option>
+                    <option value="C">Grade C</option>
+                    <option value="D">Grade D</option>
+                    <option value="E">Grade E</option>
+                    <option value="F">Grade F</option>
+                </select>
+
+                <br> <br>
+
+                <button class="btn btn-warning check6">check gpa for course-6</button> <br> <br>
+
+                <p class="mySixthResult"></p>
+                <p class="mySixthResult2"></p>
+
+
+                <br>
+
+            </div>
+
+
+
+            <div class="myCourse7" id="seven">
+                <h5>Course-7</h5>
+                <select name="myUnits" class="unit7" required>
+                    <option value="1">1 unit</option>
+                    <option value="2">2 unit</option>
+                    <option value="3">3 unit</option>
+                </select> &nbsp; &nbsp; &nbsp; &nbsp;
+
+                <select name="myGrades" class="grade7" required>
+                    <option value="A">Grade A</option>
+                    <option value="B">Grade B</option>
+                    <option value="C">Grade C</option>
+                    <option value="D">Grade D</option>
+                    <option value="E">Grade E</option>
+                    <option value="F">Grade F</option>
+                </select>
+
+                <br> <br>
+
+                <button class="btn btn-warning check7">check gpa for course-7</button> <br> <br>
+
+                <p class="mySeventhResult"></p>
+                <p class="mySeventhResult2"></p>
+
+
+                <br>
+
+            </div>
+
+
+
+
+            <div class="myCourse8" id="eight">
+                <h5>Course-8</h5>
+                <select name="myUnits" class="unit8" required>
+                    <option value="1">1 unit</option>
+                    <option value="2">2 unit</option>
+                    <option value="3">3 unit</option>
+                </select> &nbsp; &nbsp; &nbsp; &nbsp;
+
+                <select name="myGrades" class="grade8" required>
+                    <option value="A">Grade A</option>
+                    <option value="B">Grade B</option>
+                    <option value="C">Grade C</option>
+                    <option value="D">Grade D</option>
+                    <option value="E">Grade E</option>
+                    <option value="F">Grade F</option>
+                </select>
+
+                <br> <br>
+
+                <button class="btn btn-warning check8">check gpa for course-8</button> <br> <br>
+
+                <p class="myEightResult"></p>
+                <p class="myEightResult2"></p>
+
+
+                <br>
+
+            </div>
+
+
+
+
+            <div class="myCourse9" id="nine">
+                <h5>Course-9</h5>
+                <select name="myUnits" class="unit9" required>
+                    <option value="1">1 unit</option>
+                    <option value="2">2 unit</option>
+                    <option value="3">3 unit</option>
+                </select> &nbsp; &nbsp; &nbsp; &nbsp;
+
+                <select name="myGrades" class="grade9" required>
+                    <option value="A">Grade A</option>
+                    <option value="B">Grade B</option>
+                    <option value="C">Grade C</option>
+                    <option value="D">Grade D</option>
+                    <option value="E">Grade E</option>
+                    <option value="F">Grade F</option>
+                </select>
+
+                <br> <br>
+
+                <button class="btn btn-warning check9">check gpa for course-9</button> <br> <br>
+
+                <p class="myNinthResult"></p>
+                <p class="myNinthResult2"></p>
+
+
+                <br>
+
+            </div>
+
+
+
+
+
+            <div class="myCourse10" id="ten">
+                <h5>Course-10</h5>
+                <select name="myUnits" class="unit10" required>
+                    <option value="1">1 unit</option>
+                    <option value="2">2 unit</option>
+                    <option value="3">3 unit</option>
+                </select> &nbsp; &nbsp; &nbsp; &nbsp;
+
+                <select name="myGrades" class="grade10" required>
+                    <option value="A">Grade A</option>
+                    <option value="B">Grade B</option>
+                    <option value="C">Grade C</option>
+                    <option value="D">Grade D</option>
+                    <option value="E">Grade E</option>
+                    <option value="F">Grade F</option>
+                </select>
+
+                <br> <br>
+
+                <button class="btn btn-warning check10">check gpa for course-10</button> <br> <br>
+
+                <p class="myTenthResult"></p>
+                <p class="myTenthResult2"></p>
+
+
+                <br>
+
+
+
+
+                <div class="final10">
+                    <!-- SHOWING MY USERS THE FINAL RESULT -->
+                    <p>Click here for your total gpa at the end of 1st semester. </p> <br>
+                    <p>Before clicking the button below, ensure you have clicked all of the above buttons to check your
+                        gpa per course </p> <br>
+                    <button class="btn btn-warning" id="finalResult">check my total gpa for 1st semester</button>
+
+                    <br> <br>
+
+                    <p class="myFinalResult"></p> <br>
+
+                    <p class="Thanks"></p> <br>
+
+                    <p class="stayTuned"></p> <br>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+            <br>
+            <br>
+        </div>
+        
+                    <a href="https://www.producthunt.com/posts/gigacalc?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-gigacalc"
+                        target="_blank"><img
+                            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=401862&theme=neutral"
+                            alt="GigaCalc - A&#0032;GPA&#0032;calculator&#0032;for&#0032;College&#0032;Students&#0032;in&#0032;Unilorin | Product Hunt"
+                            style="width: 250px; height: 54px;" width="250" height="54" /></a>
+        
+        
+                    <br> <br>
+        
+                    <marquee scrollamount="-5" width="100%" loop="10000">
+        
+                        <p>Powered by <b>Dynasty | 09012857304 | For enquiries, you can call or send a message on whatsapp</b>
+                        </p>
+        
+                    </marquee>
+                    <a href="tel:+2349012857304">Call Me </a> | <a href="sms:+2349012857304">Send a Message </a>
+
+        <br> <br>
+
+
+    </div>
+
+</body>
+
+</html>
