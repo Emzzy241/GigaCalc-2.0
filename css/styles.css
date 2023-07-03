@@ -1,0 +1,65 @@
+/* *{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background: hsl(275, 23%, 38%);
+    color: #fff; */
+
+    background: #F9F9F9;
+    color: #333333;
+}
+
+
+
+.course-7{
+    display: none;
+}
+
+.course-8{
+    display: none;
+}
+
+.course-9{
+    display: none;
+}
+
+.course-10{
+    display: none;
+}
+
+.course-11{
+    display: none;
+}
+
+.final7{
+    display: none;
+}
+
+.final8{
+    display: none;
+}
+
+.final9{
+    display: none;
+}
+
+.final10{
+    display: none;
+}
+
+.final11{
+    display: none;
+}
+
+.final{
+    display: none;
+}
+
+.container a{
+    /* text-decoration: none; */
+    color: #333333;
+}
