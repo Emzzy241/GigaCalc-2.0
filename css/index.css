@@ -93,6 +93,7 @@ body {
 @media (max-width: 450px) {
 
   .code-container {
+    height: 100%;
     display: block;
   }
 
