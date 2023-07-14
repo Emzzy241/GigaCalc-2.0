@@ -93,9 +93,13 @@ body {
 @media (max-width: 450px) {
 
   .code-container {
-    margin-top: 50px;
     height: 100%;
     display: block;
+  }
+
+  .container{
+    
+    margin-top: 20px;
   }
 
   .code {
@@ -103,4 +107,14 @@ body {
     display: block;
     margin-top: 30px;
   }
+}
+
+
+@media (max-width: 550px) {
+ 
+  .container{
+    
+    margin-top: 20px;
+  } 
+
 }
